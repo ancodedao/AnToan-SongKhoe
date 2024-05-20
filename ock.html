@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin</title>
+    <style>
+        /* Thiết lập background cho body */
+        body {
+            background-image: url('IMG/brkhoaitay.jpg'); /* Ảnh làm nền */
+            background-size: 100% 100%; /* Chỉnh kích thước ảnh để nó phủ toàn bộ background */
+            background-attachment: fixed; /* Giữ ảnh cố định khi cuộn */
+            margin: 0;
+            overflow: auto; /* Cho phép cuộn */
+            height: 100vh; /* Chiều cao của body */
+            background-repeat: no-repeat;
+        }
+
+        /* Thiết lập kích thước tuyệt đối cho html và body */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Ngăn trình duyệt cuộn */
+        }
+
+        /* Container chứa ảnh */
+        .image-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Định dạng ảnh */
+        img {
+            max-width: 100%;
+            max-height: 95%;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container chứa ảnh -->
+    <div class="image-container">
+        <img src="IMG/ock.jpg" alt="Ảnh của bạn">
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Gallery</title>
+<style>
+  body {
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 40%, rgba(7, 189, 101, 0.8) 60%),
+        url('IMG/backgroundtemp.jpg'); /* Thay link_to_your_image.jpg bằng đường dẫn đến hình ảnh của bạn */
+    background-size: cover; /* Chỉnh kích thước ảnh để nó che kín phần body */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-attachment: fixed; /* Giữ hình ảnh cố định trong vị trí cửa sổ */
+    color: rgb(218, 16, 161); /* Màu chữ trắng */
+    padding-top: 0px; /* Thêm padding-top để tránh menu bị che phủ */
+    font-family: Arial, sans-serif; /* Font chữ phù hợp */
+}
+  .container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .item { margin: 10px; flex: 0 0 calc(50% - 20px); } /* 33.33% là tỉ lệ của mỗi cột, trừ đi margin */
+  img { max-width: 100%; height: 90%; border-radius: 50px; padding: 10px; border: 2px solid rgb(41, 20, 227);  margin-left: 10px;} /* Thay #ddd thành red */
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="item">
+    <img src="IMG/lykhoai.jpg" alt="Dishes made from potatoes">
+  </div>
+  <div class="item">
+    <img src="IMG/lyxl.jpg" alt="Dishes made from lettuce">
+  </div>
+  <div class="item">
+    <img src="IMG/luuytao.jpg" alt="Dishes made from apples">
+  </div>
+  <div class="item">
+    <img src="IMG/lythit.jpg" alt="Dishes made from meat">
+  </div>
+  <div class="item">
+    <img src="IMG/lytom.jpg" alt="Dishes made from shrimp">
+  </div>
+  <div class="item">
+    <img src="IMG/lytrung.jpg" alt="Dishes made from eggs">
+  </div>
+</div>
+</body>
+</html>

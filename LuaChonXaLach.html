@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị ảnh</title>
+    <style>
+        /* Thiết lập background cho body */
+        body {
+            background-image: url('IMG/brrau.jpg'); /* Ảnh làm nền */
+            background-size: cover; /* Chỉnh kích thước ảnh để nó phủ toàn bộ background */
+            background-attachment: fixed; /* Giữ ảnh cố định khi cuộn */
+            margin: 0;
+            overflow: auto; /* Cho phép cuộn */
+            height: 100vh; /* Chiều cao của body */
+        }
+
+        /* Thiết lập kích thước tuyệt đối cho html và body */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Ngăn trình duyệt cuộn */
+        }
+
+        /* Container chứa ảnh */
+        .image-container {
+            display: flex;
+
+            align-items: center;
+            height: 100%;
+            justify-content: flex-start;
+        }
+
+        /* Định dạng ảnh */
+        img {
+            border: 3px solid green;
+            max-width: 100%;
+            max-height: 95%;
+            margin-left: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Container chứa ảnh -->
+    <div class="image-container">
+        <img src="IMG/LuaChonXaLach.png" alt="Ảnh của bạn">
+    </div>
+</body>
+</html>
